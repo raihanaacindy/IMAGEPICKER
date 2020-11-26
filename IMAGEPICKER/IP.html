@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Picker</title>
+</head>
+<body style="margin: 200px"> 	
+    		
+    <select onchange="changepicture();" id="picturelist">			
+        <option value="https://1.bp.blogspot.com/-_72emwM-7uE/XrPi-4DtFvI/AAAAAAAAG8Y/rByYTDh5MkcxFNZwMEcYRgT1057GYbggwCLcBGAsYHQ/s640/aneka-resep-kue-kering-untuk-lebaran-2020-unik-dan-cantik.jpg">Macam - Macam Kue Kering</option>
+        <option value="https://1.bp.blogspot.com/-APh04Qom1mU/XrThVcaX2vI/AAAAAAAAG8k/M4CKHBuJIM0Fd7RBGDYy7hALD425QPRpACLcBGAsYHQ/s640/resep-blueberry-thumbprint-cookies.jpg">Thumbprint Cookies</option>			
+        <option value="https://1.bp.blogspot.com/-bjsuvOJgrZw/XrTlkisCMwI/AAAAAAAAG88/vne5roI6El4mJII33Icu1-F1KMs0L_w0QCLcBGAsYHQ/s640/resep-kue-kastengel-istimewa.jpg">Kastengel</option>
+        <option value="https://1.bp.blogspot.com/-O0DE1qnbM5E/XrT7LnI6GTI/AAAAAAAAG90/8A76bHK7r-82thLPqejCOvqmyYwMEn8PgCLcBGAsYHQ/s640/resep-kue-kering-nougat.jpg">Kue Nougat</option>
+        <option value="https://1.bp.blogspot.com/-kucYJ78JuZw/XrTpHyeZynI/AAAAAAAAG9E/XeMkh8Jx-_My0UzQjRNf271t95IU0MJawCLcBGAsYHQ/s640/resep-kue-nastar-lumer.jpg">Kue Nastar</option>
+        <option value="https://1.bp.blogspot.com/-paZyt9nEGOQ/XrTrS641UtI/AAAAAAAAG9M/w5fAP8dvl5c5ZLajDR0ew2g-EwXdRTHNgCLcBGAsYHQ/s640/resep-kue-putri-salju-keju-lembut-dan-renyah.jpg">Putri Salju</option>
+        <option value="https://1.bp.blogspot.com/-KYynFCPnk54/XrTvyfC0A2I/AAAAAAAAG9U/aU1w15HIiN0AG52qPWInJWnp75wiXnjCgCLcBGAsYHQ/s640/resep-kue-sagu-keju.jpg">Sagu Keju</option>
+        <option value="https://1.bp.blogspot.com/-hC6tgBkGcRc/XrTxkvXafUI/AAAAAAAAG9c/Hp7LdQ3lQOE9o_Uy-R2MwdBS4GHv8G4xwCLcBGAsYHQ/s640/resep-kue-semprit-renyah.jpg">Kue Semprit</option>				
+    </select>	
+	
+    <br>	
+    <img src="https://1.bp.blogspot.com/-_72emwM-7uE/XrPi-4DtFvI/AAAAAAAAG8Y/rByYTDh5MkcxFNZwMEcYRgT1057GYbggwCLcBGAsYHQ/s640/aneka-resep-kue-kering-untuk-lebaran-2020-unik-dan-cantik.jpg" style="width: 100%" id="image"> 
+</body>
+
+<script type="text/javascript">	
+    function changepicture() {
+    let image = document.getElementById("picturelist").value;		
+                document.getElementById("image").src = image;		
+            alert("This is picture of " + image);
+        }
+</script>
+
+</html>
